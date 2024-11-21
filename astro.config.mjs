@@ -10,6 +10,6 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://adrien-portfolio.github.io',
+    site: 'https://AkiraKS.github.io',
     integrations: [mdx(), sitemap(), react(), tailwind()], 
 });
