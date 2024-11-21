@@ -9,9 +9,8 @@ import Avatar from './src/images/Avatarportfolio.png';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adrien Lauriere - Portfolio</title>
-    <script src="https://cdn.tailwindcss.com" defer is:inline></script>
-    <script defer is:inline>
-    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-black text-white font-sans">
@@ -115,18 +114,25 @@ import Avatar from './src/images/Avatarportfolio.png';
     
 </body>
 
-<script defer>
+<script>
     document.addEventListener('DOMContentLoaded', function() {
         const menuButton = document.getElementById('menuButton');
-        const menuContent = document.getElementById('menuContent');
-        const menuIcon = document.getElementById('menuIcon');
-        
-        menuButton.addEventListener('click', () => {
-            menuContent.classList.toggle('hidden');
-            menuIcon.classList.toggle('fa-bars');
-            menuIcon.classList.toggle('fa-times');
-            menuIcon.classList.toggle('rotate-180');
-        });
+        if(menuButton) {
+            menuButton.addEventListener('click', () => {
+                const menuContent = document.getElementById('menuContent');
+                const menuIcon = document.getElementById('menuIcon');
+
+                if(menuContent) {
+                    menuContent.classList.toggle('hidden');
+                }
+                if (menuIcon) {
+                    menuIcon.classList.toggle('fa-bars');
+                    menuIcon.classList.toggle('fa-times');
+                    menuIcon.classList.toggle('rotate-180');
+                }
+            });
+        }
+
     });
 </script>
 </html>
