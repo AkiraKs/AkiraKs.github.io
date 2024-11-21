@@ -1,4 +1,6 @@
 ---
+import Avatar from './src/images/Avatarportfolio.png';
+import { motion } from "framer-motion";
 
 ---
 
@@ -62,7 +64,53 @@
             </div>
         </div>
     </nav>
-    
+<section class="container mx-auto px-4 py-12">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+       
+        <div class="md:w-1/2 space-y-6">
+            
+            <h1 class="text-4xl md:text-5xl font-bold font-Passion">
+                Bonjour à tous 👋 C'est <span class="text-violet-400">Adrien</span> !
+            </h1>
+            <p class="text-lg leading-relaxed">
+                Avec passion et créativité, j'adore apprendre, partager et explorer le design sous toutes ses formes ! 
+                <span class="text-violet-400">Figma, HTML/CSS, JavaScript, React, et WordPress avec DIVI</span> 
+                sont mes outils de prédilection pour créer des prototypes de sites et d'applications qui allient esthétique et fonctionnalité. 
+            </p>
+            <p><span class="text-violet-400">Périgueux, France</span>.</p>
+        </div>  
+       
+<div class="md:w-1/2 max-w-sm mx-auto">
+    <div class="relative bg-white rounded-2xl p-8 border border-violet-200 hover:shadow-xl hover:shadow-violet-300/30 transition-all duration-300 overflow-hidden group">
+        <div class="relative z-10">
+          
+            <div class="w-40 h-40 mx-auto mb-6 rounded-xl overflow-hidden ring-4 ring-violet-100 shadow-lg">
+                <img 
+                    src={Avatar.src}
+                    alt="Adrien Lauriere" 
+                    class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+                >
+            </div>
+
+            <div class="text-center space-y-4">
+                <div class="space-y-2">
+                    <h2 class="text-2xl font-bold text-gray-800">
+                        Adrien Lauriere
+                    </h2>
+                    <p class="text-violet-500 font-medium">
+                        Designer d'interface
+                    </p>
+                </div>
+
+                <blockquote class="text-gray-600 italic text-sm px-4">
+                    "La créativité, c'est l'intelligence qui s'amuse." – Albert Einstein
+                </blockquote>
+            </div>
+        </div>
+        
+</div>
+    </div>
+</section>
     
 </body>
 
