@@ -1,0 +1,16 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <BaseHead title={title} description={description} />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-black text-white font-Passion min-h-screen">
+    <slot />
+</body>
+</html>
