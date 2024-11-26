@@ -1,8 +1,10 @@
 ---
 import Baselayout from "../layouts/Baselayout.astro";
-import Avatar from '../images/hamham.jpg'; 
+import Avatar from '../images/hamham.jpg';
+
 import Nav from '../components/nav.astro';
 import Footer from '../components/Footer.astro';
+import Project from '../components/projet.astro';
 ---
 
 <Baselayout title="Adrien Lauriere - Portfolio" description="Mon portfolio">
@@ -38,8 +40,6 @@ import Footer from '../components/Footer.astro';
                                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                             />
                         </div>
-
-                        <!-- Informations -->
                         <div class="text-center space-y-6">
                             <div class="space-y-3">
                                 <h2 class="text-3xl font-bold text-gray-800 hover:text-violet-600 transition-colors duration-300">
@@ -57,6 +57,7 @@ import Footer from '../components/Footer.astro';
                 </div>
             </div>
         </main>
+        <Project />
         <Footer />
     </div>
 
