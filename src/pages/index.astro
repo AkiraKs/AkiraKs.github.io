@@ -8,9 +8,9 @@ import Project from '../components/projet.astro';
 ---
 
 <Baselayout title="Adrien Lauriere - Portfolio" description="Mon portfolio">
-    <div class="flex flex-col min-h-screen">
+    <div class="flex flex-col min-h-screen relative">
         <Nav />
-        <main class="container mx-auto px-4 py-12 flex-grow">
+        <main class="container mx-auto px-4 pt-40 flex-grow z-10">
             <div class="flex flex-col md:flex-row items-center justify-between gap-12">
                 <div class="md:w-1/2 space-y-8 transform transition-all duration-700 hover:translate-y-[-10px]">
                     <h1 class="text-5xl md:text-6xl font-bold tracking-tight">
@@ -31,7 +31,7 @@ import Project from '../components/projet.astro';
                     </p>
                 </div>  
 
-                <div class="md:w-1/2 max-w-sm mx-auto transform transition-all duration-500 hover:-translate-y-2 hover:rotate-2">
+                <div class="md:w-1/2 max-w-sm mx-auto transform transition-all duration-500 hover:-translate-y-2 hover:rotate-2 z-20">
                     <div class="bg-white rounded-2xl p-8 border border-violet-200 hover:shadow-2xl hover:shadow-violet-300/30 transition-all duration-500">
                         <div class="w-44 h-44 mx-auto mb-8 rounded-xl overflow-hidden ring-4 ring-violet-100 hover:ring-violet-300 transition-all duration-300 transform hover:scale-105">
                             <img 
