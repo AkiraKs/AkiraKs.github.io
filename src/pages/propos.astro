@@ -1,16 +1,45 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À propos - Adrien Lauriere</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body class="bg-black text-white font-sans"> 
-        <div class="max-w-3xl mx-auto">
-            <h1 class="text-4xl font-extrabold mb-8">À propos de <span class="text-violet-400">moi</span></h1>  
-        <div class="bg-gray-900 rounded-xl p-8 shadow-lg shadow-violet-300/50 mb-8">
-             
-</body>
-</html>
+---
+import Baselayout from "../layouts/Baselayout.astro";
+import Footer from '../components/Footer.astro';
+import Nav from '../components/nav.astro';
+---
+
+<Baselayout title="à propos" description="à propos de moi">
+    <Nav />
+    <div class="max-w-4xl mx-auto py-32 px-4">
+        <div class="bg-white rounded-2xl p-8 shadow-lg mb-16 transform hover:scale-[1.02] transition-all duration-500">
+            <h2 class="text-4xl font-bold mb-6 text-center text-violet-400">
+                MON PARCOURS
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed mb-8 hover:text-gray-800 transition-colors duration-300">
+                Avec passion et créativité, j'adore apprendre, partager et explorer le design sous toutes ses formes. Mon parcours m'a permis de développer des compétences variées et de travailler sur des projets passionnants.
+            </p>
+
+            <div class="space-y-6">
+                <h2 class="text-3xl font-bold mb-8 text-center text-violet-400">
+                    MES EXPÉRIENCES
+                </h2>
+                
+                <div class="space-y-4">
+                    <div class="group bg-white rounded-xl p-6 hover:bg-gray-50 transition-all duration-500 border border-gray-200 hover:border-violet-200 shadow-sm">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-xl font-bold text-gray-800 group-hover:text-violet-600 transition-colors duration-300">
+                                    Développeur Web
+                                </h3>
+                                <span class="text-gray-400">-</span>
+                                <p class="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
+                                    Stagiaire - Crimson Factory
+                                </p>
+                            </div>
+                            <p class="text-violet-600/80 font-light tracking-wider">
+                                Avril '24 / Mai '24
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <Footer />
+</Baselayout>
