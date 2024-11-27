@@ -11,5 +11,6 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
     site: 'https://AkiraKS.github.io',
+    base: '/faithful-fusion/',
     integrations: [mdx(), sitemap(), react(), tailwind()], 
 });
