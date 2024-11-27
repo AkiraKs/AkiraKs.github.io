@@ -1,45 +1,81 @@
 ---
 import Baselayout from "../layouts/Baselayout.astro";
-import Footer from '../components/Footer.astro';
 import Nav from '../components/nav.astro';
+import Footer from '../components/Footer.astro';
+
 ---
 
-<Baselayout title="à propos" description="à propos de moi">
+<Baselayout>
     <Nav />
-    <div class="max-w-4xl mx-auto py-32 px-4">
-        <div class="bg-white rounded-2xl p-8 shadow-lg mb-16 transform hover:scale-[1.02] transition-all duration-500">
-            <h2 class="text-4xl font-bold mb-6 text-center text-violet-400">
-                MON PARCOURS
-            </h2>
-            <p class="text-lg text-gray-600 leading-relaxed mb-8 hover:text-gray-800 transition-colors duration-300">
+    <div class="max-w-3xl mx-auto pt-40 px-4">
+        <div class="bg-white rounded-xl p-8 shadow-lg shadow-violet-300/50 mb-16 text-center">
+            <h2 class="text-3xl font-bold mb-4 text-black">MON PARCOURS</h2>
+            <p class="text-lg text-black mb-8">
                 Avec passion et créativité, j'adore apprendre, partager et explorer le design sous toutes ses formes. Mon parcours m'a permis de développer des compétences variées et de travailler sur des projets passionnants.
             </p>
-
-            <div class="space-y-6">
-                <h2 class="text-3xl font-bold mb-8 text-center text-violet-400">
-                    MES EXPÉRIENCES
-                </h2>
-                
-                <div class="space-y-4">
-                    <div class="group bg-white rounded-xl p-6 hover:bg-gray-50 transition-all duration-500 border border-gray-200 hover:border-violet-200 shadow-sm">
-                        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                            <div class="flex items-center gap-2">
-                                <h3 class="text-xl font-bold text-gray-800 group-hover:text-violet-600 transition-colors duration-300">
-                                    Développeur Web
-                                </h3>
-                                <span class="text-gray-400">-</span>
-                                <p class="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
-                                    Stagiaire - Crimson Factory
-                                </p>
-                            </div>
-                            <p class="text-violet-600/80 font-light tracking-wider">
-                                Avril '24 / Mai '24
-                            </p>
-                        </div>
+            <h2 class="text-3xl font-bold mb-8 text-center text-black">MES EXPÉRIENCES</h2>
+            <!-- Section Exp -->
+            <ul class="space-y-6">
+                <li class="bg-black rounded-lg p-4 shadow-md flex items-center justify-between">     
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Développeur Web</h3>
+                        <p class="text-gray-400">Stagiaire - Crimson Factory</p>
                     </div>
+                    <p class="text-gray-400">Avril '24 / Mai '24</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section Musique -->
+        <h2 class="text-6xl font-bold text-violet-500 text-left">
+            Ma Playlist 🤘
+        </h2>
+        <p>Quelques musiques qui m'accompagnent pendant mon travail. </p>
+        <div class="mt-8 rounded-xl">
+            <div class="grid grid-cols-3 gap-6">
+                <!-- Première ligne -->
+                <div class="col-span-2 transform hover:scale-105 transition-transform duration-300">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2DlHlPMa4M17kufBvI2lEN?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <div class="transform hover:scale-105 transition-transform duration-300">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/11LmqTE2naFULdEP94AUBa?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                
+                <!-- Deuxième ligne -->
+                <div class="transform hover:scale-105 transition-transform duration-300">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0lqHgjNrXmtFroWDqwV1iQ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <div class=" col-span-2 transform hover:scale-105 transition-transform duration-300">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1GWtUkDQk7XC35r7kTPfqx?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                
+                <!-- Troisième ligne -->
+                <div class="col-span-2 transform hover:scale-105 transition-transform duration-300">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6W21LNLz9Sw7sUSNWMSHRu?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <div class="transform hover:scale-105 transition-transform duration-300">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4LB4Qth2yvaimEFdV6C1jA?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
+        
     </div>
     <Footer />
 </Baselayout>
+
+<style>
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  main > div > * {
+    animation: slideIn 0.6s ease-out forwards;
+  }
+</style>
