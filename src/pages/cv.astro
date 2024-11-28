@@ -1,13 +1,23 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Adrien Lauriere</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body class="bg-black text-white font-sans">
-        <h1 class="text-4xl font-extrabold mb-8 text-center">Mon <span class="text-violet-400">CV</span></h1>
-</body>
-</html>
+---
+import Baselayout from "../layouts/Baselayout.astro";
+import Nav from "../components/nav.astro";
+import Footer from "../components/Footer.astro";
+
+import CV from "/public/CV.png";
+
+---
+
+<Baselayout title="Adrien Lauriere - Portfolio" description="Mon portfolio">
+    <Nav />
+    <section class="container text-white mx-auto px-4 pt-40 flex-grow z-10 max-w-4xl">
+        <div class="mb-16">
+          <h2 class="text-5xl font-extrabold text-purple-500 text-center tracking-wide mb-10">
+            Mon <span class="text-white">CV</span>
+          </h2>
+          <img src={CV.src} alt="mon cv">
+          </div>
+ 
+    <Footer />
+ 
+
+</Baselayout>
