@@ -1,65 +1,85 @@
 ---
 import Baselayout from "../layouts/Baselayout.astro";
-import Nav from '../components/nav.astro';
-import Footer from '../components/Footer.astro';
+import Nav from "../components/nav.astro";
+import Footer from "../components/Footer.astro";
 
+import BG3 from "../images/BG3.jpg";
+import Hades from "../images/HadesII.jpg";
 ---
 
 <Baselayout>
-    <Nav />
-    <div class="max-w-3xl mx-auto pt-40 px-4">
-        <div class="bg-white rounded-xl p-8 shadow-lg shadow-violet-300/50 mb-16 text-center">
-            <h2 class="text-3xl font-bold mb-4 text-black">MON PARCOURS</h2>
-            <p class="text-lg text-black mb-8">
-                Avec passion et créativité, j'adore apprendre, partager et explorer le design sous toutes ses formes. Mon parcours m'a permis de développer des compétences variées et de travailler sur des projets passionnants.
-            </p>
-            <h2 class="text-3xl font-bold mb-8 text-center text-black">MES EXPÉRIENCES</h2>
-            <!-- Section Exp -->
-            <ul class="space-y-6">
-                <li class="bg-black rounded-lg p-4 shadow-md flex items-center justify-between">     
-                    <div>
-                        <h3 class="text-xl font-bold text-white">Développeur Web</h3>
-                        <p class="text-gray-400">Stagiaire - Crimson Factory</p>
-                    </div>
-                    <p class="text-gray-400">Avril '24 / Mai '24</p>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Section Musique -->
-        <h2 class="text-6xl font-bold text-violet-500 text-left">
-            Ma Playlist 🤘
-        </h2>
-        <p>Quelques musiques qui m'accompagnent pendant mon travail. </p>
-        <div class="mt-8 rounded-xl">
-            <div class="grid grid-cols-3 gap-6">
-              
-<div class="col-span-2 transform hover:scale-105 transition-transform duration-300">
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2DlHlPMa4M17kufBvI2lEN?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>
-<div class="transform hover:scale-105 transition-transform duration-300">
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/11LmqTE2naFULdEP94AUBa?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>
-
-
-<div class="transform hover:scale-105 transition-transform duration-300">
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0lqHgjNrXmtFroWDqwV1iQ?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>
-<div class=" col-span-2 transform hover:scale-105 transition-transform duration-300">
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1GWtUkDQk7XC35r7kTPfqx?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>
-
-<div class="col-span-2 transform hover:scale-105 transition-transform duration-300">
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6W21LNLz9Sw7sUSNWMSHRu?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>
-<div class="transform hover:scale-105 transition-transform duration-300">
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4LB4Qth2yvaimEFdV6C1jA?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>
-            </div>
-        </div>
-        
+  <Nav />
+  <div class="max-w-3xl mx-auto pt-40 px-4">
+    <div class="bg-white rounded-xl p-8 shadow-lg shadow-violet-300/50 mb-16 text-center transition-transform duration-500 hover:scale-105">
+      <h2 class="text-3xl font-bold mb-4 text-black">MON PARCOURS</h2>
+      <p class="text-lg text-black mb-8">
+        Avec passion et créativité, j'adore apprendre, partager et explorer le design sous toutes ses formes. Mon parcours m'a permis de développer des compétences variées et de travailler sur des projets passionnants.
+      </p>
+      <h2 class="text-3xl font-bold mb-8 text-center text-black">MES EXPÉRIENCES</h2>
+      <ul class="space-y-6">
+        <li class="bg-black rounded-lg p-4 shadow-md flex items-center justify-between transition-transform duration-300 hover:shadow-xl hover:scale-105">
+            <h3 class="text-xl font-bold text-white">Développeur Web</h3>
+            <p class="text-gray-400">Stagiaire - Crimson Factory</p>
+          <p class="text-gray-400">Avril '24 / Mai '24</p>
+        </li>
+      </ul>
     </div>
-    <Footer />
+
+    <h2 class="text-6xl font-bold text-violet-500 text-left">Ma Playlist 🤘</h2>
+    <p>Quelques musiques qui m'accompagnent pendant mon travail.</p>
+    <div class="mt-8 rounded-xl pb-20">
+      <div class="grid grid-cols-3 gap-6">
+        <div class="col-span-2 transform hover:scale-105 transition-transform duration-300">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2DlHlPMa4M17kufBvI2lEN?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="transform hover:scale-105 transition-transform duration-300">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/11LmqTE2naFULdEP94AUBa?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="transform hover:scale-105 transition-transform duration-300">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0lqHgjNrXmtFroWDqwV1iQ?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="col-span-2 transform hover:scale-105 transition-transform duration-300">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1GWtUkDQk7XC35r7kTPfqx?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="col-span-2 transform hover:scale-105 transition-transform duration-300">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6W21LNLz9Sw7sUSNWMSHRu?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="transform hover:scale-105 transition-transform duration-300">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4LB4Qth2yvaimEFdV6C1jA?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="text-6xl font-bold text-violet-500 text-left">Mes jeux 🎮</h2>
+    <p>Voici les deux derniers auxquels j’ai adoré jouer !</p>
+    <div class="mt-8 rounded-xl pb-20">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="group relative overflow-hidden rounded-xl bg-gray-900 hover:shadow-2xl hover:shadow-violet-500/20 transition-all duration-500 hover:-translate-y-2">
+          <div class="aspect-video overflow-hidden">
+            <img src={BG3.src} alt="Baldur's Gate 3" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 p-6 space-y-2">
+              <span class="text-[#6c59ff] font-semibold block transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Baldur's Gate 3</span>
+              <h3 class="text-white text-xl font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">Larian Studios</h3>
+            </div>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl bg-gray-900 hover:shadow-2xl hover:shadow-violet-500/20 transition-all duration-500 hover:-translate-y-2">
+          <div class="aspect-video overflow-hidden">
+            <img src={Hades.src} alt="Hades II" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 p-6 space-y-2">
+              <span class="text-[#6c59ff] font-semibold block transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Hades II</span>
+              <h3 class="text-white text-xl font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">Supergiant Games</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <Footer />
 </Baselayout>
 
 <style>
