@@ -1,47 +1,85 @@
---- 
-import Baselayout from "../layouts/Baselayout.astro"; 
-import Nav from "../components/nav.astro"; 
-import Footer from "../components/Footer.astro"; 
+---
+import Baselayout from "../layouts/Baselayout.astro";
+import Nav from "../components/nav.astro";
+import Footer from "../components/Footer.astro";
 
-import DIVI from "/public/divi.png"; 
-import Tailwind from "/public/tailwind.png"; 
-import React from "/public/react.png"; 
+import DIVI from "/public/divi.png";
+import Tailwind from "/public/tailwind.png";
+import React from "/public/react.png";
 
-import Figma from "/public/Figma.png"; 
-import VSCode from "/public/VSC.png"; 
-import Canva from "/public/Canva.png"; 
-import Krita from "/public/Krita.png"; 
+import Figma from "/public/Figma.png";
+import VSCode from "/public/VSC.png";
+import Canva from "/public/Canva.png";
+import Krita from "/public/Krita.png";
 import Illustrator from "/public/illu.png";
-import WordPress from "/public/WordpressLogo.png"; 
-import AfterEffects from "/public/AE.png"; 
-import Photoshop from "/public/Photo.png"; 
---- 
+import WordPress from "/public/WordpressLogo.png";
+import AfterEffects from "/public/AE.png";
+import Photoshop from "/public/Photo.png";
+---
+
 <Baselayout>
   <Nav />
 
-  <section class="container mx-auto px-4 pt-20 md:pt-40 flex-grow z-10 max-w-6xl">
+  <section
+    class="container mx-auto px-4 pt-20 md:pt-40 flex-grow z-10 max-w-6xl"
+  >
     <div class="mb-8 md:mb-16 text-center">
       <h2 class="text-4xl md:text-6xl font-bold tracking-tight pb-3 md:pb-5">
         Mes <span class="text-violet-400">compétences</span>
       </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 mt-6 md:mt-10 justify-center">
-        <div class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-          <div class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4">
-            <img src={DIVI.src} alt="DIVI" class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300" />
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 mt-6 md:mt-10 justify-center"
+      >
+        <div
+          class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+        >
+          <div
+            class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4"
+          >
+            <img
+              src={DIVI.src}
+              alt="DIVI"
+              class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
           </div>
-          <span class="text-base md:text-lg font-bold group-hover:text-yellow-300">DIVI</span>
+          <span
+            class="text-base md:text-lg font-bold group-hover:text-yellow-300"
+            >DIVI</span
+          >
         </div>
-        <div class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-          <div class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4">
-            <img src={Tailwind.src} alt="Tailwind" class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300" />
+        <div
+          class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+        >
+          <div
+            class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4"
+          >
+            <img
+              src={Tailwind.src}
+              alt="Tailwind"
+              class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
           </div>
-          <span class="text-base md:text-lg font-bold group-hover:text-yellow-300">Tailwind</span>
+          <span
+            class="text-base md:text-lg font-bold group-hover:text-yellow-300"
+            >Tailwind</span
+          >
         </div>
-        <div class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-          <div class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4">
-            <img src={React.src} alt="React" class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300" />
+        <div
+          class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+        >
+          <div
+            class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4"
+          >
+            <img
+              src={React.src}
+              alt="React"
+              class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
           </div>
-          <span class="text-base md:text-lg font-bold group-hover:text-yellow-300">React</span>
+          <span
+            class="text-base md:text-lg font-bold group-hover:text-yellow-300"
+            >React</span
+          >
         </div>
       </div>
     </div>
@@ -50,54 +88,144 @@ import Photoshop from "/public/Photo.png";
       <h2 class="text-4xl md:text-6xl font-bold tracking-tight pb-3 md:pb-5">
         Les <span class="text-violet-400">Logiciels</span>
       </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 mt-6 md:mt-10 justify-center">
-        <div class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-          <div class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4">
-            <img src={Figma.src} alt="Figma" class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300" />
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 mt-6 md:mt-10 justify-center"
+      >
+        <div
+          class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+        >
+          <div
+            class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4"
+          >
+            <img
+              src={Figma.src}
+              alt="Figma"
+              class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
           </div>
-          <span class="text-base md:text-lg font-bold group-hover:text-yellow-300">Figma</span>
+          <span
+            class="text-base md:text-lg font-bold group-hover:text-yellow-300"
+            >Figma</span
+          >
         </div>
-        <div class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-          <div class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4">
-            <img src={VSCode.src} alt="VSCode" class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300" />
+        <div
+          class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+        >
+          <div
+            class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4"
+          >
+            <img
+              src={VSCode.src}
+              alt="VSCode"
+              class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
           </div>
-          <span class="text-base md:text-lg font-bold group-hover:text-yellow-300">VSCode</span>
+          <span
+            class="text-base md:text-lg font-bold group-hover:text-yellow-300"
+            >VSCode</span
+          >
         </div>
-        <div class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-          <div class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4">
-            <img src={Canva.src} alt="Canva" class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300" />
+        <div
+          class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+        >
+          <div
+            class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4"
+          >
+            <img
+              src={Canva.src}
+              alt="Canva"
+              class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
           </div>
-          <span class="text-base md:text-lg font-bold group-hover:text-yellow-300">Canva</span>
+          <span
+            class="text-base md:text-lg font-bold group-hover:text-yellow-300"
+            >Canva</span
+          >
         </div>
-        <div class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-          <div class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4">
-            <img src={Krita.src} alt="Krita" class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300" />
+        <div
+          class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+        >
+          <div
+            class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4"
+          >
+            <img
+              src={Krita.src}
+              alt="Krita"
+              class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
           </div>
-          <span class="text-base md:text-lg font-bold group-hover:text-yellow-300">Krita</span>
+          <span
+            class="text-base md:text-lg font-bold group-hover:text-yellow-300"
+            >Krita</span
+          >
         </div>
-        <div class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-          <div class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4">
-            <img src={Illustrator.src} alt="Illustrator" class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300" />
+        <div
+          class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+        >
+          <div
+            class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4"
+          >
+            <img
+              src={Illustrator.src}
+              alt="Illustrator"
+              class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
           </div>
-          <span class="text-base md:text-lg font-bold group-hover:text-yellow-300">Illustrator</span>
+          <span
+            class="text-base md:text-lg font-bold group-hover:text-yellow-300"
+            >Illustrator</span
+          >
         </div>
-        <div class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-          <div class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4">
-            <img src={WordPress.src} alt="WordPress" class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300" />
+        <div
+          class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+        >
+          <div
+            class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4"
+          >
+            <img
+              src={WordPress.src}
+              alt="WordPress"
+              class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
           </div>
-          <span class="text-base md:text-lg font-bold group-hover:text-yellow-300">WordPress</span>
+          <span
+            class="text-base md:text-lg font-bold group-hover:text-yellow-300"
+            >WordPress</span
+          >
         </div>
-        <div class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-          <div class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4">
-            <img src={AfterEffects.src} alt="AfterEffects" class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300" />
+        <div
+          class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+        >
+          <div
+            class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4"
+          >
+            <img
+              src={AfterEffects.src}
+              alt="AfterEffects"
+              class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
           </div>
-          <span class="text-base md:text-lg font-bold group-hover:text-yellow-300">AfterEffects</span>
+          <span
+            class="text-base md:text-lg font-bold group-hover:text-yellow-300"
+            >AfterEffects</span
+          >
         </div>
-        <div class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-          <div class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4">
-            <img src={Photoshop.src} alt="Photoshop" class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300" />
+        <div
+          class="group flex flex-col items-center rounded-lg p-4 md:p-6 bg-blue-800 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+        >
+          <div
+            class="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-3 md:mb-4"
+          >
+            <img
+              src={Photoshop.src}
+              alt="Photoshop"
+              class="w-12 h-12 md:w-20 md:h-20 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
           </div>
-          <span class="text-base md:text-lg font-bold group-hover:text-yellow-300">Photoshop</span>
+          <span
+            class="text-base md:text-lg font-bold group-hover:text-yellow-300"
+            >Photoshop</span
+          >
         </div>
       </div>
     </div>
