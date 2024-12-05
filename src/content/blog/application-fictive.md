@@ -68,11 +68,11 @@ heroImage: "/csmBan.jpg"
     <div class="bg-violet-900/20 p-4 sm:p-6 rounded-xl border border-violet-300/30 hover:bg-violet-900/30 transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-up">
         <h3 class="text-lg font-bold text-violet-300 mb-3 sm:mb-4">Palette de Couleurs</h3>
         <div class="flex flex-wrap gap-3 sm:gap-4 animate-slide-in-right">
-            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-violet-200 hover:scale-110 transition-transform"></div>
-            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-violet-300 hover:scale-110 transition-transform"></div>
-            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-violet-400 hover:scale-110 transition-transform"></div>
-            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-violet-500 hover:scale-110 transition-transform"></div>
-            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-violet-600 hover:scale-110 transition-transform"></div>
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gray-900 hover:scale-110 transition-transform"></div>
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gray-100 hover:scale-110 transition-transform"></div>
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-orange-800 hover:scale-110 transition-transform"></div>
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-orange-500 hover:scale-110 transition-transform"></div>
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-orange-300 hover:scale-110 transition-transform"></div>
         </div>
     </div>
     <div class="bg-violet-900/20 p-4 sm:p-6 rounded-xl border border-violet-300/30 hover:bg-violet-900/30 transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-up delay-100">
@@ -80,6 +80,16 @@ heroImage: "/csmBan.jpg"
         <p class="font-bold text-violet-100">Heading: Song Myung</p>
         <p class="text-violet-100">Body: Song Myung</p>
     </div>
+</div>
+
+## 🔍 Lien vers la Maquette
+
+<div class="py-5">
+    <h3 class="text-lg font-bold text-violet-300 mb-3"></h3>
+    <a href="https://www.figma.com/design/beNUjK0seriHDwcdsSzsVq/Application-Fictive?node-id=0-1&t=5CRT5iS5JpoTdvn3-1" target="_blank" rel="noopener noreferrer" 
+       class="inline-flex items-center px-6 py-3 bg-violet-500/30 hover:bg-violet-500/40 text-violet-200 rounded-lg transition-all duration-300 hover:-translate-y-0.5">
+        Voir le Projet sur Figma
+    </a>
 </div>
 
 ## 🔍 Conclusion
