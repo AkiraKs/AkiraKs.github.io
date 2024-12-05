@@ -12,10 +12,10 @@ heroImage: "/csmBan.jpg"
 
 ## 🎯 Objectifs
 
-<div class="grid md:grid-cols-3 gap-6 my-8">
-    <div class="bg-gray-800/30 p-6 rounded-xl border border-violet-400/20 hover:bg-gray-800/40 transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-up delay-100">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 my-6 sm:my-8">
+    <div class="bg-gray-800/30 p-4 sm:p-6 rounded-xl border border-violet-400/20 hover:bg-gray-800/40 transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-up delay-100">
         <h3 class="text-lg font-bold text-violet-400 mb-2">Design</h3>
-        <p>Interface fidèle à l'ambiance sombre et dynamique du manga</p>
+        <p class="text-sm sm:text-base">Interface fidèle à l'ambiance sombre et dynamique du manga</p>
     </div>
     <div class="bg-gray-800/30 p-6 rounded-xl border border-violet-400/20 hover:bg-gray-800/40 transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-up delay-200">
         <h3 class="text-lg font-bold text-violet-400 mb-2">Expérience</h3>
@@ -29,11 +29,11 @@ heroImage: "/csmBan.jpg"
 
 ## 🛠️ Fonctionnalités Principales
 
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-    <div class="overflow-hidden rounded-xl shadow-lg bg-gray-800/30 p-4 hover:bg-gray-800/40 transition-all duration-300 transform hover:-translate-y-2 animate-fade-in-up delay-100">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
+    <div class="overflow-hidden rounded-xl shadow-lg bg-gray-800/30 p-3 sm:p-4 hover:bg-gray-800/40 transition-all duration-300 transform hover:-translate-y-2 animate-fade-in-up delay-100">
         <h3 class="text-lg font-bold text-violet-400 mb-2">Affichage sur Iphone</h3>
-        <img src="/csm/csmScreen.png" alt="Carte interactive de Tokyo" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500" />
-        <p class="text-sm text-gray-400 italic mt-2 text-center">Icône sur l'interface Iphone</p>
+        <img src="/csm/csmScreen.png" alt="Carte interactive de Tokyo" class="w-full h-48 sm:h-64 object-cover hover:scale-105 transition-transform duration-500" />
+        <p class="text-xs sm:text-sm text-gray-400 italic mt-2 text-center">Icône sur l'interface Iphone</p>
     </div>
     <div class="overflow-hidden rounded-xl shadow-lg bg-gray-800/30 p-4 hover:bg-gray-800/40 transition-all duration-300 transform hover:-translate-y-2 animate-fade-in-up delay-200">
         <h3 class="text-lg font-bold text-violet-400 mb-2">Introduction au lancement</h3>
@@ -64,11 +64,11 @@ heroImage: "/csmBan.jpg"
 
 ## 🎨 Direction Artistique
 
-<div class="grid md:grid-cols-2 gap-6 my-8">
-    <div class="bg-gray-800/30 p-6 rounded-xl border border-violet-400/20 hover:bg-gray-800/40 transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-up">
-        <h3 class="text-lg font-bold text-violet-400 mb-4">Palette de Couleurs</h3>
-        <div class="flex gap-4 animate-slide-in-right">
-            <div class="w-12 h-12 rounded-full bg-gray-900 hover:scale-110 transition-transform"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 my-6 sm:my-8">
+    <div class="bg-gray-800/30 p-4 sm:p-6 rounded-xl border border-violet-400/20 hover:bg-gray-800/40 transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-up">
+        <h3 class="text-lg font-bold text-violet-400 mb-3 sm:mb-4">Palette de Couleurs</h3>
+        <div class="flex flex-wrap gap-3 sm:gap-4 animate-slide-in-right">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gray-900 hover:scale-110 transition-transform"></div>
             <div class="w-12 h-12 rounded-full bg-gray-100 hover:scale-110 transition-transform"></div>
             <div class="w-12 h-12 rounded-full bg-orange-800 hover:scale-110 transition-transform"></div>
             <div class="w-12 h-12 rounded-full bg-orange-500 hover:scale-110 transition-transform"></div>
