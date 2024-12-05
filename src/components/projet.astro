@@ -1,6 +1,9 @@
 ---
-import ChainSawMan from '/public/csm.jpg';
-import BunBun from '/public/Bunbun.jpg';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 ---
 
 <section class="bg-black mx-auto px-4 pt-40 pb-40 flex-grow">
@@ -17,44 +20,31 @@ import BunBun from '/public/Bunbun.jpg';
             </p>
         </div>
         <div class="grid md:grid-cols-2 gap-8">
-            <a href="/blog/csm" class="group relative overflow-hidden rounded-xl bg-gray-900 hover:shadow-2xl hover:shadow-violet-500/20 transition-all duration-500 hover:-translate-y-2">
-                <div class="aspect-video overflow-hidden">
-                    <img 
-                        src={ChainSawMan.src} 
-                        alt="Projet Chainsaw Man" 
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                    />
+                  {
+                    posts.map((post) => (
+                      <a href={`/blog/${post.slug}/`} class="group relative overflow-hidden rounded-xl bg-gray-900 hover:shadow-2xl hover:shadow-violet-500/20 transition-all duration-500 hover:-translate-y-2">
+                        <div class="aspect-video overflow-hidden">
+                          <img 
+                            src={post.data.heroImage} 
+                            alt={post.data.title} 
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                          />
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <div class="absolute bottom-0 p-6 space-y-2">
+                            <span class="text-[#6c59ff] font-semibold block transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                              {post.data.category}
+                            </span>
+                            <h3 class="text-white text-xl font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                              {post.data.title}
+                            </h3>
+                          </div>
+                        </div>
+                      </a>
+                    ))
+                  }
                 </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div class="absolute bottom-0 p-6 space-y-2">
-                        <span class="text-[#6c59ff] font-semibold block transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                            Maquette UI
-                        </span>
-                        <h3 class="text-white text-xl font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
-                            Application fictive sur l'univers de Chainsaw Man
-                        </h3>
-                    </div>
-                </div>
-            </a>
-            <div class="group relative overflow-hidden rounded-xl bg-gray-900 hover:shadow-2xl hover:shadow-violet-500/20 transition-all duration-500 hover:-translate-y-2">
-                <div class="aspect-video overflow-hidden bg-[#add8e6]">
-                    <img 
-                        src={BunBun.src} 
-                        alt="Projet BunBun" 
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                    />
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div class="absolute bottom-0 p-6 space-y-2">
-                        <span class="text-[#6c59ff] font-semibold block transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                            Maquette UI
-                        </span>
-                        <h3 class="text-white text-xl font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
-                            Site web sur un coffee shop
-                        </h3>
-                    </div>
-                </div>
-            </div>
+              
         </div>
     </div>
 </section>

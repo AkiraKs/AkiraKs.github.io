@@ -1,16 +1,75 @@
 ---
-title: "First post"
-description: "Lorem ipsum dolor sit amet"
+title: "Application sur l'univers de Chainsaw Man"
+description: "Maquette UI d'une application interactive inspirée de l'univers de Chainsaw Man"
 pubDate: "Jul 08 2022"
-heroImage: "/blog-placeholder-3.jpg"
+heroImage: "/csmBan.jpg"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+<div class="bg-gray-800/30 p-8 rounded-xl border border-violet-400/20 mb-12">
+    <h2 class="text-2xl font-bold text-violet-400 mb-4">À propos du projet</h2>
+    <p>Lors de ma deuxième année en BUT MMI, j'ai conçu une application interactive inspirée de l'univers du manga "Chainsaw Man", qui raconte l'histoire de Denji, un Devil Hunter dans un monde où humains et démons s'affrontent. L'application, destinée aux chasseurs de démons, inclut une carte interactive signalant en temps réel les incidents démoniaques, une messagerie pour coordonner les équipes, et un profil utilisateur. Ce projet visait à retranscrire l'atmosphère unique et intense du manga tout en offrant une expérience utilisateur immersive et fonctionnelle.</p>
+</div>
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+## 🎯 Objectifs
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+<div class="grid md:grid-cols-3 gap-6 my-8">
+    <div class="bg-gray-800/30 p-6 rounded-xl border border-violet-400/20">
+        <h3 class="text-lg font-bold text-violet-400 mb-2">Design</h3>
+        <p>Interface fidèle à l'ambiance sombre et dynamique du manga</p>
+    </div>
+    <div class="bg-gray-800/30 p-6 rounded-xl border border-violet-400/20">
+        <h3 class="text-lg font-bold text-violet-400 mb-2">Expérience</h3>
+        <p>Navigation fluide et intuitive pour les fans de la série</p>
+    </div>
+    <div class="bg-gray-800/30 p-6 rounded-xl border border-violet-400/20">
+        <h3 class="text-lg font-bold text-violet-400 mb-2">Contenu</h3>
+        <p>Intégration des éléments clés de l'univers Chainsaw Man</p>
+    </div>
+</div>
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+## 🛠️ Outils Utilisés
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+<div class="flex flex-wrap gap-4 my-8">
+    <span class="px-4 py-2 bg-violet-400/10 text-violet-400 rounded-full">Figma</span>
+</div>
+
+## 📱 Aperçu des Écrans
+
+<div class="space-y-12 my-8">
+    <div class="border border-violet-400/20 rounded-xl overflow-hidden">
+        <img src="/screen1.jpg" alt="Écran d'accueil" class="w-full" />
+        <div class="p-4 bg-gray-800/30">
+            <h3 class="text-lg font-bold text-violet-400">Écran d'accueil</h3>
+            <p class="text-gray-300">Description de l'écran et des choix de design...</p>
+        </div>
+    </div>
+    
+</div>
+
+## 🎨 Direction Artistique
+
+<div class="grid md:grid-cols-2 gap-6 my-8">
+    <div class="bg-gray-800/30 p-6 rounded-xl border border-violet-400/20">
+        <h3 class="text-lg font-bold text-violet-400 mb-4">Palette de Couleurs</h3>
+        <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-full bg-gray-900"></div>
+            <div class="w-12 h-12 rounded-full bg-gray-100"></div>
+            <div class="w-12 h-12 rounded-full bg-orange-800"></div>
+            <div class="w-12 h-12 rounded-full bg-orange-500"></div>
+            <div class="w-12 h-12 rounded-full bg-orange-300"></div>
+        </div>
+    </div>
+    <div class="bg-gray-800/30 p-6 rounded-xl border border-violet-400/20">
+        <h3 class="text-lg font-bold text-violet-400 mb-4">Typographie</h3>
+        <p class="font-bold">Heading: Song Myung</p>
+        <p>Body: Song Myung</p>
+    </div>
+</div>
+
+## 🔍 Conclusion
+
+<div class="bg-gradient-to-r from-violet-600/20 to-violet-400/20 rounded-xl p-8 my-12">
+    <p class="text-lg">
+        Ce projet de maquette UI démontre comment une licence populaire peut être adaptée en une expérience numérique cohérente, tout en respectant l'essence de l'œuvre originale, et ma permis de développer mon travail en maquettage.
+    </p>
+</div>
