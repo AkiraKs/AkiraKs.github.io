@@ -3,6 +3,7 @@ import Baselayout from "../layouts/Baselayout.astro";
 import Nav from "../components/nav.astro";
 import Footer from "../components/Footer.astro";
 import Project from "../components/projet.astro";
+import Loading from "../components/Loading.astro";
 
 import Avatar from "/public/hamham.jpg";
 
@@ -10,6 +11,7 @@ import Avatar from "/public/hamham.jpg";
 ---
 
 <Baselayout title="Adrien Lauriere - Portfolio" description="Mon portfolio">
+  <Loading />
 
   <div class="flex flex-col min-h-screen relative">
     <Nav />
