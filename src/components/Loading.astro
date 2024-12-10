@@ -86,7 +86,6 @@
             setTimeout(() => {
                 loadingScreen.style.display = 'none';
                 
-                // Initialiser l'Intersection Observer pour les animations au scroll
                 const observerOptions = {
                     root: null,
                     rootMargin: '0px',
@@ -106,7 +105,6 @@
                 const elements = document.querySelectorAll('[data-animate]');
                 elements.forEach(el => observer.observe(el));
 
-                // Ajouter les animations de fade in
                 document.querySelector('nav')?.classList.add('animate-fadeIn');
                 document.querySelector('main')?.classList.add('animate-fadeIn');
             }, 700);
