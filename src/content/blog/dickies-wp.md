@@ -56,16 +56,12 @@ heroImage: "/dickies/Dickies.png"
     </div>
 </div>
 
-## 🔍 Liens
+## 🔍 Lien
 
 <div class="py-5">
     <a href="https://www.figma.com/design/8bb4GV6U1kEk4vIk8iSJk8/Lauriere_Joseph_Vibien?node-id=0-1&t=8xBuOoS2qwpOA55u-1" target="_blank"
        class="inline-flex items-center px-6 py-3 bg-violet-500/30 hover:bg-violet-500/40 text-violet-200 rounded-lg transition-all duration-300 hover:-translate-y-0.5">
         Voir le Projet sur Figma
-    </a>
-     <a href="https://www.o-joseph.mmi-limoges.fr/wordpress_acom/" target="_blank"
-       class="inline-flex items-center px-6 py-3 bg-violet-500/30 hover:bg-violet-500/40 text-violet-200 rounded-lg transition-all duration-300 hover:-translate-y-0.5">
-        Voir le site
     </a>
 </div>
 
