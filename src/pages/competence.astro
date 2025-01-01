@@ -23,17 +23,17 @@ const skills = [
   { 
     category: "Développement Front-end",
     items: [
-      { src: HTML5.src, alt: "HTML5", name: "HTML5", level: "100%" },
-      { src: CSS.src, alt: "CSS", name: "CSS", level: "80%" },
-      { src: Tailwind.src, alt: "Tailwind", name: "Tailwind", level: "100%" },
-      { src: React.src, alt: "React", name: "React", level: "75%" },
+      { src: HTML5.src, alt: "HTML5", name: "HTML5" },
+      { src: CSS.src, alt: "CSS", name: "CSS" },
+      { src: Tailwind.src, alt: "Tailwind", name: "Tailwind" },
+      { src: React.src, alt: "React", name: "React" },
     ]
   },
   {
     category: "CMS & Outils",
     items: [
-      { src: WordPress.src, alt: "WordPress", name: "WordPress", level: "75%" },
-      { src: DIVI.src, alt: "DIVI", name: "DIVI", level: "80%" },
+      { src: WordPress.src, alt: "WordPress", name: "WordPress" },
+      { src: DIVI.src, alt: "DIVI", name: "DIVI" },
     ]
   }
 ];
@@ -42,18 +42,18 @@ const softwares = [
   {
     category: "Design & Création",
     items: [
-      { src: Figma.src, alt: "Figma", name: "Figma", level: "100%" },
-      { src: Photoshop.src, alt: "Photoshop", name: "Photoshop", level: "60%" },
-      { src: Illustrator.src, alt: "Illustrator", name: "Illustrator", level: "90%" },
-      { src: AfterEffects.src, alt: "AfterEffects", name: "AfterEffects", level: "60%" },
+      { src: Figma.src, alt: "Figma", name: "Figma"},
+      { src: Photoshop.src, alt: "Photoshop", name: "Photoshop"},
+      { src: Illustrator.src, alt: "Illustrator", name: "Illustrator" },
+      { src: AfterEffects.src, alt: "AfterEffects", name: "AfterEffects" },
     ]
   },
   {
     category: "Outils de Production",
     items: [
-      { src: VSCode.src, alt: "VSCode", name: "VSCode", level: "100%" },
-      { src: Canva.src, alt: "Canva", name: "Canva", level: "100%" },
-      { src: Krita.src, alt: "Krita", name: "Krita", level: "80%" },
+      { src: VSCode.src, alt: "VSCode", name: "VSCode"},
+      { src: Canva.src, alt: "Canva", name: "Canva" },
+      { src: Krita.src, alt: "Krita", name: "Krita" },
     ]
   }
 ];
@@ -77,11 +77,7 @@ const softwares = [
             <div class="bg-slate-800/50 p-6 rounded-xl hover:bg-slate-800/70 transition-all">
               <div class="flex flex-col items-center">
                 <img src={skill.src} alt={skill.alt} class="w-16 h-16 mb-4 object-contain" />
-                <h3 class="text-xl font-semibold mb-2">{skill.name}</h3>
-                <div class="w-full bg-slate-700 rounded-full h-2.5">
-                  <div class="bg-violet-400 h-2.5 rounded-full" style={`width: ${skill.level}`}></div>
-                </div>
-                <span class="mt-2 text-violet-400">{skill.level}</span>
+                <h3 class="text-xl font-semibold mb-2">{skill.name}</h3>              
               </div>
             </div>
           ))}
@@ -99,11 +95,7 @@ const softwares = [
             <div class="bg-slate-800/50 p-6 rounded-xl hover:bg-slate-800/70 transition-all">
               <div class="flex flex-col items-center">
                 <img src={software.src} alt={software.alt} class="w-16 h-16 mb-4 object-contain" />
-                <h3 class="text-xl font-semibold mb-2">{software.name}</h3>
-                <div class="w-full bg-slate-700 rounded-full h-2.5">
-                  <div class="bg-violet-400 h-2.5 rounded-full" style={`width: ${software.level}`}></div>
-                </div>
-                <span class="mt-2 text-violet-400">{software.level}</span>
+                <h3 class="text-xl font-semibold mb-2">{software.name}</h3>               
               </div>
             </div>
           ))}
