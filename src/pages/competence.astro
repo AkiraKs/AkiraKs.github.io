@@ -20,22 +20,42 @@ import HTML5 from "/public/competences/HTML5.png";
 import CSS from "/public/competences/CSS.png";
 
 const skills = [
-  { src: HTML5.src, alt: "HTML5", name: "HTML5" },
-  { src: CSS.src, alt: "CSS", name: "CSS" },
-  { src: Tailwind.src, alt: "Tailwind", name: "Tailwind" },
-  { src: React.src, alt: "React", name: "React" },
-  { src: DIVI.src, alt: "DIVI", name: "DIVI" },
+  { 
+    category: "Développement Front-end",
+    items: [
+      { src: HTML5.src, alt: "HTML5", name: "HTML5", level: "100%" },
+      { src: CSS.src, alt: "CSS", name: "CSS", level: "80%" },
+      { src: Tailwind.src, alt: "Tailwind", name: "Tailwind", level: "100%" },
+      { src: React.src, alt: "React", name: "React", level: "75%" },
+    ]
+  },
+  {
+    category: "CMS & Outils",
+    items: [
+      { src: WordPress.src, alt: "WordPress", name: "WordPress", level: "75%" },
+      { src: DIVI.src, alt: "DIVI", name: "DIVI", level: "80%" },
+    ]
+  }
 ];
 
 const softwares = [
-  { src: Figma.src, alt: "Figma", name: "Figma" },
-  { src: VSCode.src, alt: "VSCode", name: "VSCode" },
-  { src: Canva.src, alt: "Canva", name: "Canva" },
-  { src: Krita.src, alt: "Krita", name: "Krita" },
-  { src: WordPress.src, alt: "WordPress", name: "WordPress" },
-  { src: Illustrator.src, alt: "Illustrator", name: "Illustrator" },
-  { src: Photoshop.src, alt: "Photoshop", name: "Photoshop" },
-  { src: AfterEffects.src, alt: "AfterEffects", name: "AfterEffects" },
+  {
+    category: "Design & Création",
+    items: [
+      { src: Figma.src, alt: "Figma", name: "Figma", level: "100%" },
+      { src: Photoshop.src, alt: "Photoshop", name: "Photoshop", level: "60%" },
+      { src: Illustrator.src, alt: "Illustrator", name: "Illustrator", level: "90%" },
+      { src: AfterEffects.src, alt: "AfterEffects", name: "AfterEffects", level: "60%" },
+    ]
+  },
+  {
+    category: "Outils de Production",
+    items: [
+      { src: VSCode.src, alt: "VSCode", name: "VSCode", level: "100%" },
+      { src: Canva.src, alt: "Canva", name: "Canva", level: "100%" },
+      { src: Krita.src, alt: "Krita", name: "Krita", level: "80%" },
+    ]
+  }
 ];
 ---
 
@@ -43,27 +63,53 @@ const softwares = [
   <Nav />
 
   <section class="container mx-auto px-4 pt-20 md:pt-40 flex-grow z-10 max-w-6xl">
-    <div class="mb-8 md:mb-16 text-center">
-      <h2 class="text-4xl md:text-6xl font-bold tracking-tight pb-3 md:pb-5">
-        Mes <span class="text-violet-400">compétences</span>
-      </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 mt-6 md:mt-10 justify-center">
-        {skills.map(skill => (
-          <SkillCard src={skill.src} alt={skill.alt} name={skill.name} />
-        ))}
-      </div>
-    </div>
+    <h1 class="text-5xl md:text-7xl font-bold text-center mb-16">
+      Mes <span class="text-violet-400">Compétences</span>
+    </h1>
 
-    <div class="mb-8 md:mb-16 text-center">
-      <h2 class="text-4xl md:text-6xl font-bold tracking-tight pb-3 md:pb-5">
-        Les <span class="text-violet-400">Logiciels</span>
-      </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 mt-6 md:mt-10 justify-center">
-        {softwares.map(software => (
-          <SkillCard src={software.src} alt={software.alt} name={software.name} />
-        ))}
+    {skills.map((category) => (
+      <div class="mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
+          {category.category}
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {category.items.map((skill) => (
+            <div class="bg-slate-800/50 p-6 rounded-xl hover:bg-slate-800/70 transition-all">
+              <div class="flex flex-col items-center">
+                <img src={skill.src} alt={skill.alt} class="w-16 h-16 mb-4 object-contain" />
+                <h3 class="text-xl font-semibold mb-2">{skill.name}</h3>
+                <div class="w-full bg-slate-700 rounded-full h-2.5">
+                  <div class="bg-violet-400 h-2.5 rounded-full" style={`width: ${skill.level}`}></div>
+                </div>
+                <span class="mt-2 text-violet-400">{skill.level}</span>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    ))}
+
+    {softwares.map((category) => (
+      <div class="mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
+          {category.category}
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {category.items.map((software) => (
+            <div class="bg-slate-800/50 p-6 rounded-xl hover:bg-slate-800/70 transition-all">
+              <div class="flex flex-col items-center">
+                <img src={software.src} alt={software.alt} class="w-16 h-16 mb-4 object-contain" />
+                <h3 class="text-xl font-semibold mb-2">{software.name}</h3>
+                <div class="w-full bg-slate-700 rounded-full h-2.5">
+                  <div class="bg-violet-400 h-2.5 rounded-full" style={`width: ${software.level}`}></div>
+                </div>
+                <span class="mt-2 text-violet-400">{software.level}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
   </section>
 
   <Footer />
